@@ -140,8 +140,8 @@ local function flit(f_args)
   table.insert(l_args.opts.special_keys.prev_target,
                l_args.t and f_args.keys.T or f_args.keys.F)
   -- Add ; and , too.
-  table.insert(l_args.opts.special_keys.next_target, ';')
-  table.insert(l_args.opts.special_keys.prev_target, ',')
+  --table.insert(l_args.opts.special_keys.next_target, ';')
+  --table.insert(l_args.opts.special_keys.prev_target, ',')
 
   require('leap').leap(l_args)
 end
