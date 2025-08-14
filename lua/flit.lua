@@ -143,8 +143,6 @@ local function flit (args)
   if type(keys.prev_target) == 'string' then
     keys.prev_target = { keys.prev_target }
   end
-  table.insert(keys.next_target, ';')
-  table.insert(keys.prev_target, ',')
 
   require('leap').leap(leap_args)
 end
